@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f8fa;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  padding: 40px 40px;
+}
+
+h2 {
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #cacfd0;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  color: var(--error-color);
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #10c0e7;
+  color: #fff;
+  border: 2px solid #10c0e7;
+  border-radius: 3px;
+}
